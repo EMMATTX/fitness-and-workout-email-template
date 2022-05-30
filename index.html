@@ -25,6 +25,8 @@
 		img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
 	</style>
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
 		*{
 			margin: 0;
 			padding: 0;
@@ -36,7 +38,7 @@
 			background-color: #cccccc;
 		}
 		table, td, div, h1, p {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-        /*table {border: 2px solid #000000 !important;}*/
+        /* table {border: 2px solid #000000 !important;} */
 		
 		
 		img{
@@ -51,17 +53,21 @@
 		.wrapper{
 			width: 100%;
 			table-layout: fixed;
-			background-color: #ffffff;
+			background-color: #cccccc;
 			padding-bottom: 60px;
 		}
 
+		.preheader{
+			max-width: 600px;
+		}
+
 		.main{
-			width: 100%;
+			
 			max-width: 600px;
 			background-color: #ffffff;
 			font-family: sans-serif;
 			color: #000000;
-			border: #808080 3px solid !important;
+			/* border: #808080 3px solid !important; */
 			
 		}
 
@@ -73,15 +79,25 @@
 		.two-columns .column{
 			width: 100%;
 			max-width: 300px;
-			display: inline;
+			display: inline ;
 			vertical-align: top;
 			text-align: center;
+		}
+
+		.social-media{
+			padding: 10px 72px;
 		}
 		.social-media ul li{
 			float: left;
 		}
 
 		/*banner section*/
+		.banner{
+			width: 600px;
+			max-width: 100%;
+			
+		}
+
 		.banner .banner-con{
 			
 			text-align: center;
@@ -114,6 +130,20 @@
 			font-size: 20px;
 		}
 
+		.offer a{
+			color: #000000e1;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all .5s ease-in-out;
+
+		}
+		.offer a:hover{
+			color: #10f31b;
+			background-color: #000000ad;
+			border-radius: 5px;
+			cursor: pointer;
+
+		}
 
 		/*bottom footer*/
 		.bottom-f{
@@ -133,22 +163,23 @@
 			text-decoration: underline;
 		}
 
-		.offer a{
-			color: #000000e1;
-			border-radius: 5px;
-			cursor: pointer;
-			transition: all .5s ease-in-out;
-
-		}
-		.offer a:hover{
-			color: #10f31b;
-			background-color: #000000ad;
-			border-radius: 5px;
-			cursor: pointer;
-
-		}
+		
 
 		@media screen and  (max-width:450px) {
+			.main{
+				max-width: 100% !important;
+				font-size: 100% !important;
+
+			}
+
+			table, td{
+				width: 100% !important;
+				
+			}
+
+			.banner{
+				max-width: 100% !important;
+			}
     
 		}
 
@@ -161,7 +192,7 @@
 	<center class="wrapper">
 
 		<!--preheader-->
-		<table role="presentation " width="100%" border="0" cell-padding="0" cell-spacing="0" border-collapse="0" style="padding: 10px 0; max-width: 600px;">
+		<table width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="4" border-collapse="0" style="padding: 10px 0 !important;" class="preheader">
 			<tr>
 				<td align="right" style="padding: 10px !important;">
 					<a title="browser view" href="#" style="text-decoration: underline; color: #000000e1;">
@@ -172,12 +203,12 @@
 		</table>
 
 
-		<table role="presentation" class="main" style="width: 100%; border-collapse: collapse; border: 0;border-spacing: 0;" cell-padding="0" cell-spacing="0" style="border: #808080 3px solid; max-width: 600px;">
+		<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" border-collapse="0" class="main" style=" border-collapse: collapse; border: 0;border-spacing: 0;" cellpadding="0" cellspacing="0">
 
 			<!--border-->
 
 			<tr>
-				<td height="8" style="background-color: #ffff00">
+				<td width="100%" height="8" style="background-color: #ffff00">
 					
 
 				</td>
@@ -186,15 +217,15 @@
 			<!--header for logo-->
 
 			<tr>
-				<td style="padding: 14px 0 4px 0; background-color: #00000083; max-width: 600px;">
+				<td width="100%" style="padding: 14px 0 4px 0; background-color: #00000083;">
 
 					
-					<table role="presentation" width="100%">
+					<table role="presentation" width="100%"  border="0" cellpadding="0" cellspacing="0" border-collapse="0">
 						<tr>
 							<td class="two-columns">
 
 
-								<table role="presentation" width="100%" class="column">
+								<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" border-collapse="0" class="column">
 									<tr>
 										<td class="logo" style="padding: 0 52px 10px; font-size: 20px !important;" >
 
@@ -207,9 +238,9 @@
 									</tr>
 								</table>
 								 
-								<table role="presentation" width="100%" class="column">
+								<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" border-collapse="0" class="column">
 									<tr>
-										<td class="social-media" style="padding: 10px 72px;">
+										<td class="social-media">
 											<ul style="float: right; list-style: none;">
 												<li><a href="#" class="social"><img src="/img/social media icons/white-facebook.png" alt="facebook handle" width="30"></a></li>
 												<li><a href="#" class="social"><img src="/img/social media icons/white-twitter.png" alt="twitter handle" width="30"></a></li>
@@ -223,6 +254,7 @@
 										</td>
 									</tr>
 								</table>
+
 							</td>
 						</tr>
 					</table>
@@ -234,7 +266,7 @@
 
 			<!--border-->
 			<tr>
-				<td height="2" style="background-color: #ffff00">
+				<td width="90%" height="2" style="background-color: #ffff00">
 					
 				</td>
 			</tr>
@@ -243,13 +275,19 @@
 			<!--banner with motivational quotes on top-->
 			
 			<tr>
-				<td align="center" class="banner" style="background:  url(/img/banner1.jpeg) no-repeat center center/cover; width: 600px;  max-width: 100%;" width="600">
-					<div class="banner-con" style=" padding: 40px 20px;">
+				<td align="center" class="banner" style="background:  url(/img/banner1.jpeg) no-repeat center center/cover;">
+
+					<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="4"  border-collapse="0" class="banner-con" style=" padding: 40px 20px;">
+						<tr>
+							<td>
+								<h1 style="padding: 10px 30px 40px 30px; line-height: 55px">The <em style="color: #10f31b; font-style: italic;">greatest</em> asset you can have in a <span style="color: #ffff00;">life</span> time is <br/><strong style="font-weight:bolder; color: #10f31b;">"Good Health"</strong></h1>
+							</td>
+						</tr>
 						
-						<h1 style="padding: 10px 30px 40px 30px; line-height: 55px">The <em style="color: #10f31b; font-style: italic;">greatest</em> asset you can have in a <span style="color: #ffff00;">life</span> time is <br/><strong style="font-weight:bolder; color: #10f31b;">"Good Health"</strong></h1>
 						
 						
-					</div>
+						
+					</table>
 				</td>
 			</tr>
 
@@ -259,11 +297,12 @@
 			<!--1st call-to-action-->
 			<tr>
 				<td align="center" style="background-color: #ffffff">
-					<table align="center" width="96%" style="padding: 0; margin: 30px 10px; border-radius: 10px !important;" border="0" cell-padding="0" cell-spacing="0"  border-collapse="0">
+					<table align="center" width="90%" style="padding: 0; margin: 30px 10px; border-radius: 10px !important;" border="0" cellpadding="0" cellspacing="4"  border-collapse="0">
 
 						<tr>
 							<td align="center" valign="middle" width="50%"  style=" float: left; padding: 10px;">
 								<div class="cta-content">
+
 									<p style="padding: 5px 0 15px 0 !important; line-height: 25px !important; color: #000000; font-size: 20px !important;">Do you want to stay fit while you age and never worry about bad health?<br>"Stop wishing and Start doing"<br> we got you covered!...</p>
 
 									<a href="#" style="padding: 5px 10px !important; font-size: 20px; border: #10f31b 2px solid; border-radius:5px; color: #000000;">Get started <span style="color:#ffff00;">&rarr;</span></a>
@@ -285,7 +324,7 @@
 			<tr>
 				<td class="offer" style="text-align: center; background-color: #ffffff; padding:0 20px 20px !important;">
 
-					<table role="presentation" width="100%" align="center" cell-padding="0" cell-spacing="0" border="0" border-collapse="0">
+					<table role="presentation" width="90%" align="center" cellpadding="0" cellspacing="4" border="0" border-collapse="0">
 						<tr>
 							<td height="6" align="left" style="background-color: #ffff00; ">
 							</td>
@@ -373,7 +412,7 @@
 				<td align="center" style="color: #000000e1; background-color: #ffffff; ">
 
 					<!--one column mobile view-->
-					<table align="center" role="presentation" width="96%" cellspacing="0" border="0" cellpadding="0" style="background-color: #ffffff; border-radius: 10px; margin-top: 25px; margin-bottom: 25px;" class="desktop-column mobile-column">
+					<table align="center" role="presentation" width="96%" cellspacing="0" border="0" cellpadding="0" style="background-color: #ffffff; border-radius: 10px; padding: 25px 0 0;" class="desktop-column mobile-column">
 
 						<tr>
 							<td align="center" class="blog">
@@ -602,7 +641,7 @@
 										<td width="33.33%" align="center">
 											<div style="text-align: center;">
 												<a style="color:#10f31b;" href="#">
-													<h2>video 1</h2>
+													<h2>video 2</h2>
 												</a>
 
 												<p style="padding: 10px 0; font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aperiam.</p>
@@ -633,7 +672,7 @@
 										<td align="center">
 											<div style="text-align: center;">
 												<a style="color:#10f31b;" href="#">
-													<h2>video 2</h2>
+													<h2>video 3</h2>
 												</a>
 
 												<p style="padding: 10px 0; font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aperiam.</p>
@@ -741,7 +780,7 @@
 					<table width="100%" role="presentation" align="center" class="bottom-f" style="background-color: #cccccc; font-size: smaller; text-align: center; display: inline;">
 						<tr>
 							<td>
-								<p style="padding: 10px 30px;">&copy; 2012 - 2022 GreenFitX, Inc. All Rights Reserved.</p>
+								<p style="padding: 10px 30px;">&copy; 2012 - 2022 GreenFitX, Inc. All Rights Reserved. Designed by <a href="https://github.com/EMMATTA">Emmanuel Chukwuka</a></p>
 
 								<ul style="font-size: 10px !important;">
 									<li><a href="#">Terms and conditions</a></li>
