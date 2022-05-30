@@ -64,7 +64,7 @@
 		.main{
 			
 			max-width: 600px;
-			background-color: #ffffff;
+			background-color: #000000e1;
 			font-family: sans-serif;
 			color: #000000;
 			/* border: #808080 3px solid !important; */
@@ -79,7 +79,7 @@
 		.two-columns .column{
 			width: 100%;
 			max-width: 300px;
-			display: inline ;
+			display: inline-block;
 			vertical-align: top;
 			text-align: center;
 		}
@@ -126,6 +126,50 @@
 			cursor: pointer;
 			
 		}
+
+		.cta-content>p{
+			padding: 5px 0 15px 0 !important;
+		}
+
+		.cta-img{
+			clip-path: polygon(23% 0, 100% 0%, 100% 100%, 0 100% );
+			width: 275px;
+			max-width: 100%;
+			margin: 7px 0;
+			border-radius: 5px;
+			border-top: 4px #000000 solid;
+			border-right: 4px #000000 solid;
+			border-bottom: 4px #000000 solid;
+			border-left: 4px #000000 solid;
+		}
+
+		.three-columns{
+			text-align: center;
+			font-size: 0;
+			padding: 15px 0 25px;
+		}
+
+		.three-columns .column{
+			width: 100%;
+			max-width: 200px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			background-color: #1a1919e1;
+		}
+
+		.three-columns .padding{
+			padding: 15px;
+	
+		}
+
+		.three-columns .content{
+			font-size: 15px;
+			line-height: 20px;
+			padding: 0 5px;
+		}
+
+
 		.two-columns .last p{
 			font-size: 20px;
 		}
@@ -165,9 +209,9 @@
 
 		
 
-		@media screen and  (max-width:450px) {
+		@media screen and (max-width:450px) {
 			.main{
-				max-width: 100% !important;
+				width: 100% !important;
 				font-size: 100% !important;
 
 			}
@@ -179,8 +223,71 @@
 
 			.banner{
 				max-width: 100% !important;
+				height: auto;
 			}
-    
+
+			.banner-con{
+				font-size: 100% !important;
+			
+			}
+
+			.cta-two-columns {
+				text-align: center;
+				font-size: 0;
+
+			}
+			
+			.cta-two-columns  .cta-column{
+				width: 100%;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+
+			}
+
+			.cta-content > p{
+				padding: 5px 20px 15px !important;
+			}
+
+			.cta-img{
+				clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100% );
+				width: 275px;
+				max-width: 100%;
+				margin: 7px 0;
+				border-radius: 5px;
+				border-top: 4px #000000 solid;
+				border-right: 4px #000000 solid;
+				border-bottom: 4px #000000 solid;
+				border-left: 4px #000000 solid;
+			}
+
+			.cta-coach-two-columns{
+				text-align: center;
+				font-size: 0;
+
+			}
+			
+			.cta-coach-two-columns  .cta-coach-column{
+				width: 100%;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+
+			}
+
+			.blog-mobile-two-columns{
+				text-align: center;
+				font-size: 0;
+			}
+
+			.blog-mobile-two-columns  .blog-mobile-column{
+				width: 100%;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+
+			}
+		
 		}
 
 
@@ -192,7 +299,7 @@
 	<center class="wrapper">
 
 		<!--preheader-->
-		<table width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="4" border-collapse="0" style="padding: 10px 0 !important;" class="preheader">
+		<table width="100%" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" border-collapse="0" style="padding: 10px 0 !important;" class="preheader">
 			<tr>
 				<td align="right" style="padding: 10px !important;">
 					<a title="browser view" href="#" style="text-decoration: underline; color: #000000e1;">
@@ -275,12 +382,12 @@
 			<!--banner with motivational quotes on top-->
 			
 			<tr>
-				<td align="center" class="banner" style="background:  url(/img/banner1.jpeg) no-repeat center center/cover;">
+				<td align="center" class="banner" style="background:  url(/img/home-3.jpg) no-repeat center center/cover;">
 
-					<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="4"  border-collapse="0" class="banner-con" style=" padding: 40px 20px;">
+					<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"  border-collapse="0" class="banner-con" style=" padding: 40px 20px;">
 						<tr>
 							<td>
-								<h1 style="padding: 10px 30px 40px 30px; line-height: 55px">The <em style="color: #10f31b; font-style: italic;">greatest</em> asset you can have in a <span style="color: #ffff00;">life</span> time is <br/><strong style="font-weight:bolder; color: #10f31b;">"Good Health"</strong></h1>
+								<h1 style="padding: 10px 30px 40px !important; line-height: 55px">The <em style="color: #10f31b; font-style: italic;">greatest</em> asset you can have in a <span style="color: #ffff00;">life</span> time is <br/><strong style="font-weight:bolder; color: #10f31b;">"Good Health"</strong></h1>
 							</td>
 						</tr>
 						
@@ -296,24 +403,27 @@
 						
 			<!--1st call-to-action-->
 			<tr>
-				<td align="center" style="background-color: #ffffff">
-					<table align="center" width="90%" style="padding: 0; margin: 30px 10px; border-radius: 10px !important;" border="0" cellpadding="0" cellspacing="4"  border-collapse="0">
+				<td align="center" style="background-color: #000000e1">
+
+					<table align="center" width="100%" style="padding:40px 30px; border-radius: 10px !important;" border="0" cellpadding="0" cellspacing="0"  border-collapse="0" class="cta-two-columns">
 
 						<tr>
-							<td align="center" valign="middle" width="50%"  style=" float: left; padding: 10px;">
+
+							<td align="center"  width="50%"  style="float: right;vertical-align: bottom; padding: 10px 5px;" class="cta-column">
+								<img src="/img/banner2.jpeg" width="275" height="183" alt="people at the gym" class="cta-img">
+							</td>
+
+
+							<td align="center" valign="middle" width="50%"  style=" float: left; padding: 10px;" class="cta-column">
 								<div class="cta-content">
 
-									<p style="padding: 5px 0 15px 0 !important; line-height: 25px !important; color: #000000; font-size: 20px !important;">Do you want to stay fit while you age and never worry about bad health?<br>"Stop wishing and Start doing"<br> we got you covered!...</p>
+									<p style=" line-height: 25px !important; color: #ffffff; font-size: 20px !important;">Do you want to stay fit while you age and never worry about bad health?<br>"Stop wishing and Start doing"<br> we got you covered!...</p>
 
 									<a href="#" style="padding: 5px 10px !important; font-size: 20px; border: #10f31b 2px solid; border-radius:5px; color: #000000;">Get started <span style="color:#ffff00;">&rarr;</span></a>
 
 								</div>
 							</td>
 
-							<td align="right"  width="50%"  style="float: right;vertical-align: bottom; padding: 10px 5px;">
-								<img style="clip-path: polygon(23% 0, 100% 0%, 100% 100%, 0 100% );width: 275px; max-width: 100%; margin: 7px 0; border-radius: 5px; border-top: 4px #000000 solid;border-right: 4px #000000 solid;border-bottom: 4px #000000 solid; border-left: 4px #000000 solid;" src="/img/banner2.jpeg" width="275" height="183" alt="people at the gym">
-							</td>
-							
 						</tr>
 					</table>
 					
@@ -322,36 +432,35 @@
 
 			<!--easter offer and services section-->
 			<tr>
-				<td class="offer" style="text-align: center; background-color: #ffffff; padding:0 20px 20px !important;">
+				<td class="offer" style="text-align: center; background-color: #000000e1; padding:0 20px 20px !important;">
 
-					<table role="presentation" width="90%" align="center" cellpadding="0" cellspacing="4" border="0" border-collapse="0">
+					<table role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" border-collapse="0">
+						
 						<tr>
-							<td height="6" align="left" style="background-color: #ffff00; ">
-							</td>
-							<td align="center">
-								<h1 style="padding: 10px !important; color: #10f31b; text-align: center;text-shadow: 0 4px 15px rgba(0, 0, 0, .15)!important;">Easter <strong>Offer!</strong></h1>
+							
+							<td align="center" style="padding: 15px 0 !important;">
+								<h1 style="padding: 10px !important; color: #10f31b; text-align: center;text-shadow: 0 4px 15px rgba(0, 0, 0, .15)!important; font-size: 40px;">Easter <strong>Offer!</strong></h1>
 
-							</td>
-
-							<td height="6" align="right" style="background-color: #ffff00; ">
 							</td>
 						</tr>
+
+					
 					</table>
 
-					<table align="center" cell-padding="0" cell-spacing="0" border="0" border-collapse="0" role="presentation" width="100%" style="border-radius: 10px !important;">
+					<table align="center" cell-padding="0" cell-spacing="0" border="0" border-collapse="0" role="presentation" width="100%" style="border-radius: 10px !important;" class="cta-coach-two-columns">
 
 						<tr>
 
-							<td style="padding: 10px; border:none">
-								<img style=" border-top: 4px #000000 solid;border-right: 4px #000000 solid;border-bottom: 4px #000000 solid; border-left: 4px #000000 solid;" src="/img/coach.jpeg" alt="workout coach instructing">
+							<td style="padding: 10px; border:none" class="cta-coach-column">
+								<img style="border-radius: 10px; border-top: 4px #10f31b solid;border-right: 4px #10f31b solid;border-bottom: 4px #10f31b solid; border-left: 4px #10f31b solid;" src="/img/coach.jpeg" alt="workout coach instructing">
 							</td>
 
-							<td style="padding: 10px 10px 5px !important;">
+							<td style="padding: 10px 10px 5px !important;" class="cta-coach-column">
 								
-								<p style="padding: 0 0 20px !important; color: #000000e1; font-size: 20px; line-height: 30px; ">
+								<p style="padding: 0 0 20px !important; color: #ffffff; font-size: 20px; line-height: 30px; ">
 									
 									Get our full all-in-one workout planning, coaching and mentorship package.
-									with <span style="background-color:#ffff00; padding: 0 5px;">50%</span> off discount!. expires 1st of may 2022...
+									with <span style="background-color:#10f31b; padding: 0 5px;">50%</span> off discount!. expires 1st of may 2022...
 
 								</p>
 
@@ -378,14 +487,14 @@
 
 			<!--DIY, tip and advice-->
 			<tr>
-				<td style="text-align:center; background: url(/img/pro-tip-banner.jpeg) no-repeat center center/cover; width: 600px; max-width: 100%;" >
+				<td style="text-align:center; background: url(/img/pro-tip-banner.jpeg) no-repeat center center/cover; max-width: 100%;" >
 
 
 					
 					<div style="background-color: #000000e1; top: 0;
 					left: 0; color: #ffffff; ">
 
-						<h2 style="padding: 40px 0 10px; font-size: 40px; font-weight: bolder;"><span style="color: #10f31b;">DIY</span> health tip!</h2>
+						<h2 style="color: #10f31b;padding: 40px 0 10px; font-size: 40px; font-weight: bolder;"><span style="color: #10f31b;">DIY</span> health tip!</h2>
 
 						<p style="font-style: italic; font-size: 15px; line-height: 25px; padding: 10px 30px 20px;">
 							drink aleast 5 litres of water before going to bed,
@@ -402,17 +511,18 @@
 
 			<!--border-->
 			<tr style="margin: 15px 0 0 10px">
-				<td height="6" width="400" align="center" style="background-color: #ffff00; "></td>
+				<td height="6" width="400" align="center" style="background-color: #ffff00; ">
+				</td>
 
 			</tr>
 		
 
 			<!--blog post section with 1col3row(2col->image and blog description resp #stacked)->mobile and 1col3row(2col->image and blog description resp side-by-side)->desltop/tablet-->
 			<tr>
-				<td align="center" style="color: #000000e1; background-color: #ffffff; ">
+				<td align="center" style="color: #10f31b; background-color: #000000e1; padding: 30px 0 !important; ">
 
 					<!--one column mobile view-->
-					<table align="center" role="presentation" width="96%" cellspacing="0" border="0" cellpadding="0" style="background-color: #ffffff; border-radius: 10px; padding: 25px 0 0;" class="desktop-column mobile-column">
+					<table align="center" role="presentation" width="96%" cellspacing="0" border="0" cellpadding="0" style="padding: 25px 0 0;">
 
 						<tr>
 							<td align="center" class="blog">
@@ -430,12 +540,12 @@
 
 												<!--two columns-->
 												<tr>
-													<td style="display: inline;">
+													<td  class="blog-mobile-two-columns">
 
 														<!--left column-->											
-														<table role="presentation" width="47%" align="left" cellspacing="0" border="0" cellpadding="0" >
+														<table role="presentation" width="47%" align="left" cellspacing="0" border="0" cellpadding="0" class="blog-mobile-column">
 															<tr>
-																<td align="left" class="image">
+																<td class="image">
 																	<img src="/img/blogpost1.jpeg" alt="" width="159" height="150" style="width: 159px; height: 150px; max-width: 100%;">
 
 																	
@@ -444,7 +554,7 @@
 														</table>
 
 														<!--right column-->
-														<table role="presentation" width="47%" align="right" cellspacing="0" border="0" cellpadding="0">
+														<table role="presentation" width="47%" align="right" cellspacing="0" border="0" cellpadding="0" class="blog-mobile-column">
 															<tr>
 																<td align="left" class="content">
 																	<a href="" target="_blank" style="text-decoration: none; font-weight: bolder; "><p style="color: #000000e1; padding: 5px 10px;font-size: 20px;">Blog 1</p></a>
@@ -456,7 +566,7 @@
 
 
 														<!--blog1 border-->
-														<table role="presentation" width="100%" align="right" cellspacing="0" border="0" cellpadding="0">
+														<table role="presentation" width="100%" cellspacing="0" border="0" cellpadding="0">
 															<tr>
 																<td height="2" style="background-color: #ffff00; "></td>
 												
@@ -471,10 +581,12 @@
 
 											<!--blog 2-->
 											<table role="presentation" width="95%" cellspacing="0" border="0" cellpadding="0" style="padding: 10px !important;">
+
+												<!--two columns-->
 												<tr>
-													<td style="display: inline; ">
-														<!--two columns-->
-														<table role="presentation" width="47%" align="left" cellspacing="0" border="0" cellpadding="0" >
+													<td class="blog-mobile-two-columns">
+														<!-- left column -->
+														<table role="presentation" width="47%" align="left" cellspacing="0" border="0" cellpadding="0" class="blog-mobile-column">
 															<tr>
 																<td align="left" class="image">
 																	<img src="/img/blogpost1.jpeg" alt="" width="159" height="150" style="width: 159px; height: 150px; max-width: 100%;">
@@ -483,8 +595,8 @@
 																</td>
 															</tr>
 														</table>
-
-														<table role="presentation" width="47%" align="right" cellspacing="0" border="0" cellpadding="0">
+														<!-- right column -->
+														<table role="presentation" width="47%" align="right" cellspacing="0" border="0" cellpadding="0" class="blog-mobile-column">
 															<tr>
 																<td align="left" class="content">
 																	<a href="" target="_blank" style="text-decoration: none; font-weight: bolder; "><p style="color: #000000e1;  padding: 5px 10px;font-size: 20px;">Blog 2</p></a>
@@ -496,7 +608,7 @@
 
 
 														<!--blog2 border-->
-														<table role="presentation" width="100%" align="right" cellspacing="0" border="0" cellpadding="0">
+														<table role="presentation" width="100%" cellspacing="0" border="0" cellpadding="0">
 															<tr style="margin: 15px 0 0 10px">
 																<td height="2" style="background-color: #ffff00; "></td>
 												
@@ -513,20 +625,22 @@
 
 											<!--blog 3-->
 											<table role="presentation" width="95%" cellspacing="0" border="0" cellpadding="0" style="padding: 10px !important;">
+
+												<!--two columns-->
 												<tr>
-													<td style="display: inline;">
-														<!--two columns-->
-														<table role="presentation" width="47%" align="left" cellspacing="0" border="0" cellpadding="0">
+													<td class="blog-mobile-two-columns">
+														<!-- left column -->
+														<table role="presentation" width="47%" align="left" cellspacing="0" border="0" cellpadding="0" class="blog-mobile-column">
 															<tr>
-																<td align="left" class="image">
+																<td class="image">
 
 																	<img src="/img/blogpost1.jpeg" alt="" width="159" height="150" style="width: 159px; height: 150px; max-width: 100%;">
 
 																</td>
 															</tr>
 														</table>
-
-														<table role="presentation" width="47%" align="right" cellspacing="0" border="0" cellpadding="0">
+														<!-- right column -->
+														<table role="presentation" width="47%" align="right" cellspacing="0" border="0" cellpadding="0" class="blog-mobile-column">
 															<tr>
 																<td align="left" class="content">
 																	<a href="" target="_blank" style="text-decoration: none; font-weight: bolder; "><p style="color: #000000e1; padding: 5px 10px;font-size: 20px;">Blog 3</p></a>
@@ -576,24 +690,30 @@
 			<!--videos tutorials with 1col3row(inside-each:2col, 1 for thumbnail and title/desp resp #stacked)->mobile and 3col(inside-each:2col, 1 for thumbnail and title/desp resp)1row->desktop/tablet-->
 
 			<tr>
-				<td align="center" style="color: #000000e1; background-color: #ffffff; ">
-
+				<td style="background-color: #000000e1;">
 					<!--videos section-->
 					<table role="presentation" align="center" width="100%" border="0" border-collapse="0" cell-padding="0" cell-spacing="0" style="padding: 20px 0 5px !important;">
 						<tr>
-							<td align="center" class="blog">
-								<h1 style="font-weight: bolder;">Take a look our awesome workout videos</h1>
+							<td align="center">
+								<h1 style="font-weight: bolder; color: #10f31b;">Take a look our awesome workout videos</h1>
 							</td>
 						</tr>
 					</table>
+				</td>
+			</tr>
 
-					<table align="center" role="presentation" width="100%" cellspacing="0" border="0" cellpadding="0" style="padding: 25px 10px;" class="desktop-column mobile-column">
+			<!-- videos -->
+			
+			<tr>
+				<td class="three-columns" width="100%" style="background-color: #000000e1;">
+					
+					<!-- video 1 -->
+					<table class="column">
 
 						<tr>
-							<!--video 1-->
-							<td align="center" style="padding: 5px 0 0; border-radius: 10px;">
+							<td class="padding">
 
-								<table width="150" role="presentation" border="0" align="center" cell-padding="0" cell-spacing="0" border-collapse="0">
+								<table class="content" style="color: #ffffff;">
 									<tr>
 										<td align="center">
 											<a href="#"><img height="180" width="150" src="/img/blogpost2.jpeg" alt="video/tutorial"></a>
@@ -613,7 +733,7 @@
 													<h2>video 1</h2>
 												</a>
 
-												<p style="padding: 10px 0; font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aperiam.</p>
+												<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aperiam.</p>
 											</div>
 										</td>
 									</tr>
@@ -622,49 +742,26 @@
 
 							</td>
 
-							<!--video 2-->
-							<td align="center" style="padding: 5px 0 0; border-radius: 10px;">
-								
-								<table width="150" role="presentation" border="0" align="center" cell-padding="0" cell-spacing="0" border-collapse="0">
-									<tr>
-										<td width="33.33%" align="center">
-											<a href="#"><img height="180" width="150" src="/img/blogpost2.jpeg" alt="video/tutorial"></a>
-										</td>
-									</tr>
-
-									<tr>
-										<td height="2" width="33.33%" style="background-color: #ffff00; "></td>
 						
-									</tr>
+						</tr>
+					</table>
 
-									<tr>
-										<td width="33.33%" align="center">
-											<div style="text-align: center;">
-												<a style="color:#10f31b;" href="#">
-													<h2>video 2</h2>
-												</a>
+					<!-- video 2 -->
+					<table class="column">
+						<tr>
+					
+							<td class="padding">
 
-												<p style="padding: 10px 0; font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aperiam.</p>
-											</div>
-										</td>
-									</tr>
-
-								</table>
-
-							</td>
-
-							<!--video 3-->
-							<td align="center" style="padding: 5px 0 0; border-radius: 10px;">
-
-								<table width="150" role="presentation" border="0" align="center" cell-padding="0" cell-spacing="0" border-collapse="0">
+								<table class="content" style="color: #ffffff;">
 									<tr>
 										<td align="center">
 											<a href="#"><img height="180" width="150" src="/img/blogpost2.jpeg" alt="video/tutorial"></a>
+
 										</td>
 									</tr>
 
 									<tr>
-										<td height="2"  style="background-color: #ffff00; "></td>
+										<td height="2" width="150" style="background-color: #ffff00; "></td>
 						
 									</tr>
 
@@ -672,28 +769,64 @@
 										<td align="center">
 											<div style="text-align: center;">
 												<a style="color:#10f31b;" href="#">
-													<h2>video 3</h2>
+													<h2>video 1</h2>
 												</a>
 
-												<p style="padding: 10px 0; font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aperiam.</p>
+												<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aperiam.</p>
 											</div>
 										</td>
 									</tr>
 
 								</table>
 
+							</td>
+
+						
+						</tr>
+					</table>
+
+					<!-- video 3 -->
+					<table class="column">
+						<tr>
+							<td class="padding">
+
+								<table class="content" style="color: #ffffff;">
+									<tr>
+										<td align="center">
+											<a href="#"><img height="180" width="150" src="/img/blogpost2.jpeg" alt="video/tutorial"></a>
+
+										</td>
+									</tr>
+
+									<tr>
+										<td height="2" width="150" style="background-color: #ffff00; "></td>
+						
+									</tr>
+
+									<tr>
+										<td align="center">
+											<div style="text-align: center;">
+												<a style="color:#10f31b;" href="#">
+													<h2>video 1</h2>
+												</a>
+
+												<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aperiam.</p>
+											</div>
+										</td>
+									</tr>
+
+								</table>
 
 							</td>
+
+						
 						</tr>
 					</table>
 
 
 				</td>
 			</tr>
-			
-				
-			
-						
+
 
 			<!--products, supplements and equipment sales offers with 2col3row->mobile and 3col2rol->desktop/tablet-->
 			<tr>
@@ -717,7 +850,7 @@
 
 			<!--location, contacts, phone and socail handles mobile->stacked and desktop/tablet->2col1row(location/phone and social-handles resp.)-->
 			<tr>
-				<td style="background-color: #cccccc; text-align: center; padding: 20px 10px 10px; ">
+				<td style="background-color: #000000e1; text-align: center; padding: 20px 10px 10px;">
 					<table role="presentation" width="100%" class="footer">
 
 
@@ -738,7 +871,7 @@
 
 						<!--contact info / NAP data-->
 						<tr>
-							<td style="line-height: 25px;">
+							<td style="line-height: 25px; color: #ffffff;">
 
 								<p style="padding: 10px; font-size: 14px;"> Street Road, City, State<br> <a href="mailto:support@greenfitx.com" style="color: #008000;">support@greenfitx.com</a><br><a href="tel:34536333436" style="color: #008000;">34536333436</a></p>
 
@@ -762,7 +895,7 @@
 
 						<!--unsubcribe and manage preferences-->
 						<tr>
-							<td style="padding: 10px 10px 20px;">
+							<td style="padding: 10px 10px 20px; color: #ffffff;">
 								
 								<p style="font-size: 12px;">
 
@@ -776,8 +909,14 @@
 
 					</table>
 
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td>
 					<!--bottom footer-->
-					<table width="100%" role="presentation" align="center" class="bottom-f" style="background-color: #cccccc; font-size: smaller; text-align: center; display: inline;">
+					<table width="100%" role="presentation" align="center" class="bottom-f" style="background-color: #ffff00; font-size: smaller; text-align: center; ">
 						<tr>
 							<td>
 								<p style="padding: 10px 30px;">&copy; 2012 - 2022 GreenFitX, Inc. All Rights Reserved. Designed by <a href="https://github.com/EMMATTA">Emmanuel Chukwuka</a></p>
@@ -796,13 +935,6 @@
 
 				</td>
 			</tr>
-			
-			
-			<!--bottom border-->
-			<!-- <tr>
-				<td height="6" style="background-color: #ffff00;"></td>
-			</tr> -->
-
 
 		</table>
 	
